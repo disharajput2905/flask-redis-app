@@ -127,9 +127,9 @@ Through this project, I learned:
 
 Add your project screenshot here:
 
-```markdown
+##App output
 ![Project GIF](screenshots/app-output.gif)
-```
+
 ##docker image
 ![docker image](screenshots/docker-images.png)
 
