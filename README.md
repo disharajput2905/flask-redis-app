@@ -1,121 +1,158 @@
+# Flask + Redis Multi-Container Application using Docker Compose
+
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
-![Python](https://img.shields.io/badge/Python-3.11-yellow?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web_App-black?logo=flask)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Flask](https://img.shields.io/badge/Flask-Python-black?logo=flask)
+![Redis](https://img.shields.io/badge/Redis-Cache-red?logo=redis)
+![Docker Compose](https://img.shields.io/badge/Docker--Compose-Orchestration-blue?logo=docker)
 ![Platform](https://img.shields.io/badge/Platform-Linux-orange?logo=linux)
 
-# 🚀 Docker Flask App
+A simple multi-container application built using **Flask**, **Redis**, and **Docker Compose**.  
+This project demonstrates containerized application development, service communication, Docker networking, and scalable backend architecture.
+---
 
-A simple Flask application containerized using Docker.
+# 🚀 Project Overview
+
+This application consists of:
+
+- **Flask Web Application**
+- **Redis Database**
+- **Docker Compose Orchestration**
+
+The Flask app connects to Redis and stores visit counts dynamically.
 
 ---
 
-## 📌 Project Objective
+# 🏗️ Architecture
 
-This project demonstrates:
+```text
+User → Flask App → Redis
+```
 
-- Writing a Dockerfile
-- Building Docker images
-- Running containers
-- Port mapping
-- Docker layering concepts
-
----
-
-## 🛠 Tech Stack
-
-- Python
-- Flask
-- Docker
+- Flask handles web requests
+- Redis stores application data
+- Docker Compose manages multi-container setup
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-```bash
-.
+```text
+flask-redis-app/
+│
 ├── app.py
 ├── requirements.txt
 ├── Dockerfile
+├── docker-compose.yml
 └── README.md
 ```
 
 ---
 
-## 🐳 Dockerfile Used
+# ⚙️ Technologies Used
 
-```Dockerfile
-FROM python:3.11
+- Python
+- Flask
+- Redis
+- Docker
+- Docker Compose
 
-WORKDIR /app
+---
 
-COPY requirements.txt .
+# 🐳 Docker Concepts Practiced
 
-RUN pip install -r requirements.txt
+- Multi-container applications
+- Docker networking
+- Docker Compose
+- Container communication
+- Port mapping
+- Image building
+- Volume management
+- Service orchestration
 
-COPY . .
+---
 
-EXPOSE 5000
+# 🔥 Features
 
-CMD ["python", "app.py"]
+- Containerized Flask backend
+- Redis integration
+- Persistent service communication
+- Easy deployment using Docker Compose
+- Beginner-friendly DevOps project
+
+---
+
+# 📦 Installation & Setup
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/flask-redis-app.git
+cd flask-redis-app
 ```
 
 ---
 
-## ⚙ Build Docker Image
+## 2️⃣ Run Application
 
 ```bash
-docker build -t flask-app:v1 .
+docker-compose up --build
 ```
 
 ---
 
-## ▶ Run Container
+## 3️⃣ Access Application
 
-```bash
-docker run -d -p 5000:5000 --name flask-container flask-app:v1
-```
+Open browser:
 
----
-
-## 🌐 Access Application
-
-```bash
+```text
 http://localhost:5000
 ```
 
 ---
 
-## 📸 Screenshots
+# 🧠 Learning Outcomes
 
-### Docker Images
-![Docker images](screenshots/docker-ps.png)
+Through this project, I learned:
 
-### Browser Output
-![browser output](screenshots/docker-running.png)
-
----
-
-## 📚 Concepts Learned
-
-- Dockerfile
-- Docker Images
-- Containers
-- Port Mapping
-- Docker Layers
-- Docker Build Process
+- How Docker containers communicate
+- How Redis works with Flask
+- Docker Compose fundamentals
+- Managing multi-service applications
+- Writing Dockerfiles
+- Container orchestration basics
 
 ---
 
-## 🚀 Future Improvements
+# 📸 Project Screenshot
 
-- Add Docker Compose
-- Add MySQL
-- Deploy on AWS
-- Add NGINX reverse proxy
+Add your project screenshot here:
+
+```markdown
+![Project GIF](screenshots/app-output.gif)
+```
+##docker image
+![docker image](screenshots/docker-images.png)
+
+## docker compose 
+![docker compose](screenshots/docker-compose-ps.png)
+---
+
+# 🛠️ Future Improvements
+
+- Add Nginx reverse proxy
+- Implement persistent Redis volumes
+- Deploy on AWS EC2
+- Add CI/CD using GitHub Actions
+- Add frontend UI
 
 ---
 
-## Author
-**Disha Rajpoot**
-Cloud and DevOps enthusiast
+# 👩‍💻 Author
+
+**Disha Rajput**
+
+---
+
+# ⭐ Support
+
+If you found this project useful, give it a star on GitHub ⭐
