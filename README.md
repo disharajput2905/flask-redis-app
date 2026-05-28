@@ -128,7 +128,7 @@ Through this project, I learned:
 Add your project screenshot here:
 
 ##App output
-![Project GIF](screenshots/app-output.gif)
+![Project GIF](screenshots/app-output.png)
 
 ##docker image
 ![docker image](screenshots/docker-images.png)
@@ -150,7 +150,7 @@ Add your project screenshot here:
 # 👩‍💻 Author
 
 **Disha Rajput**
-
+Cloud | devops | enthusiast
 ---
 
 # ⭐ Support
