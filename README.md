@@ -125,15 +125,13 @@ Through this project, I learned:
 
 # 📸 Project Screenshot
 
-Add your project screenshot here:
-
-##App output
+### App output
 ![Project GIF](screenshots/app-output.png)
 
-##docker image
+### docker image
 ![docker image](screenshots/docker-images.png)
 
-## docker compose 
+### docker compose 
 ![docker compose](screenshots/docker-compose-ps.png)
 ---
 
