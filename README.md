@@ -24,15 +24,8 @@ The Flask app connects to Redis and stores visit counts dynamically.
 
 # 🏗️ Architecture
 
-```text
-User → Flask App → Redis
-```
+![architecture diagram](screenshots/diagram.png)
 
-- Flask handles web requests
-- Redis stores application data
-- Docker Compose manages multi-container setup
-
----
 
 # 📂 Project Structure
 
@@ -86,10 +79,9 @@ flask-redis-app/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/flask-redis-app.git
+git clone https://github.com/disharajput2905/flask-redis-app.git
 cd flask-redis-app
 ```
-
 ---
 
 ## 2️⃣ Run Application
