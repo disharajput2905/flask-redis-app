@@ -24,7 +24,7 @@ The Flask app connects to Redis and stores visit counts dynamically.
 
 # 🏗️ Architecture
 
-![architecture diagram](screenshots/diagram.png)
+![architecture diagram](screenshots/diagram.jpg)
 
 
 # 📂 Project Structure
